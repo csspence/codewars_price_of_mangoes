@@ -6,6 +6,7 @@ mango(3, 3) ==> 6    # 2 mangoes for 3 = 6; +1 mango for free
 mango(9, 5) ==> 30   # 6 mangoes for 5 = 30; +3 mangoes for free
 */
 
-function mango(quantity, price){
-
+const mango = (quantity, price) => {
+  const multiple = Math.floor(quantity / 3);
+  return price * (quantity - multiple);
 }
